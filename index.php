@@ -651,7 +651,7 @@ fclose($arquivo);
 		while(($data = fgetcsv($arquivo,100,";"))!=FALSE){
 			echo "<tr>";
 			foreach($data as $campo){
-				echo "<td>$campo</td>";
+				echo "<td>" . $campo["name"] . "</td>";
 			}
 			echo "</tr>";
 		}
