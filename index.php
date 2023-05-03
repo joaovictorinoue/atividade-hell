@@ -652,6 +652,9 @@ fclose($arquivo);
 			echo "<tr>";
 			foreach($data as $campo){
 				echo "<td>" . $campo["name"] . "</td>";
+				echo "<td>" . $campo["phone"] . "</td>";
+				echo "<td>" . $campo["email"] . "</td>";
+				echo "<td>" . $campo["country"] . "</td>";
 			}
 			echo "</tr>";
 		}
